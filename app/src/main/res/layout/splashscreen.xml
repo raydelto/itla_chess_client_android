@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@color/general_color">
+
+    <ImageView
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:id="@+id/itlaLogo"
+        android:layout_marginTop="55dp"
+        android:src="@drawable/itlalogo"
+        android:contentDescription="@string/logo"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="ITLA CHESS"
+        android:textSize="42sp"
+        android:textColor="@color/white"
+        android:id="@+id/appName"
+        android:layout_marginTop="55dp"
+        android:layout_below="@+id/itlaLogo"
+        android:layout_centerHorizontal="true" />
+
+    <ProgressBar
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/progressBar"
+        android:layout_marginTop="50dp"
+        android:layout_below="@+id/appName"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
