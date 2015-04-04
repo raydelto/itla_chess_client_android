@@ -33,7 +33,7 @@ public class LoginActivity extends Activity {
                 if(nickname.trim().equals("") || nickname.trim().length() == 0){
                     Toast.makeText(getApplicationContext(), "The username cannot be empty!!!", Toast.LENGTH_LONG).show();
                 }else{
-                    Toast.makeText(getApplicationContext(), "Waiting for the server response", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getApplicationContext(), "Waiting for the Server response", Toast.LENGTH_SHORT).show();
 
                     ServerClient.getInstance().sendMessage("/login&".concat(nickname));
                     btnSignIn.setEnabled(false);
